@@ -39,7 +39,11 @@ class App extends Component {
                     placeholder="Type name here"
                     changeHandler={this.onChangeHandler}
                 />
-                <CardList monsters={filteredMonsters} />
+                {monsters.length ? (
+                    <CardList monsters={filteredMonsters} />
+                ) : (
+                    <h2 className="loader-text">Monsters are loading ...</h2>
+                )}
             </div>
         );
     }

@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-h1 {
+h1, .loader-text {
   font-family: 'Bigelow Rules';
   font-size: 72px;
   color: #0ccac4;
